@@ -18,7 +18,7 @@
         TextElement.FontWeight="Regular"
         TextElement.FontSize="13"
         TextOptions.TextFormattingMode="Ideal" ShowIconOnTitleBar="False"
-        TextOptions.TextRenderingMode="Auto" Loaded="MainWindow_Loaded" Icon="Icon.ico" >
+        TextOptions.TextRenderingMode="Auto" Loaded="MainWindow_Loaded" Icon="Icon.ico" KeyDown="Window_KeyPressed" >
 
     <Grid>
         <Grid.RowDefinitions>
@@ -146,7 +146,7 @@
 
             <Label Grid.Column="3" Content="00:00" Margin="5 6 0 0" x:Name="LblTimeDown" />
 
-            <Slider Grid.Column="4" x:Name="SldTimeline" Minimum="0" Maximum="300" Margin="0 11 0 0" />
+            <Slider Grid.Column="4" x:Name="SldTimeline" Minimum="0" Maximum="300" Margin="0 11 0 0" MouseLeftButtonUp="SldTimeline_Click" />
 
             <Label Grid.Column="5" Content="03:53" Margin="2 6 5 0" x:Name="LblTimeLeft" />
 

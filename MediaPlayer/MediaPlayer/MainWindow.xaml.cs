@@ -239,5 +239,38 @@ namespace MediaPlayer
                         this.AddFile(s);
             }
         }
+
+        private void SldTimeline_Click(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+            //To set the Song Time Value on SldTimeline Clicked
+            //Point p = e.GetPosition(SldTimeline);
+            //Console.WriteLine("Maus Position: " + p.X + ", relativ vom Time-Slider.");
+        }
+
+        private void Window_KeyPressed(object sender, System.Windows.Input.KeyEventArgs e)
+        {
+            switch(e.Key)
+            {
+                case System.Windows.Input.Key.MediaPlayPause:
+
+                    break;
+
+                case System.Windows.Input.Key.MediaNextTrack:
+
+                    break;
+
+                case System.Windows.Input.Key.MediaPreviousTrack:
+
+                    break;
+
+                case System.Windows.Input.Key.MediaStop:
+
+                    break;
+
+                case System.Windows.Input.Key.Space:
+
+                    break;
+            }
+        }
     }
 }
